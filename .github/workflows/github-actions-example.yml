@@ -7,8 +7,8 @@ jobs:
       - uses: actions/checkout@v2
       - uses: actions/setup-node@v1
       - run: npm install -g boozang
-      - name: Run headless test
+      - name: Run headless test with Boozang
         uses: GabrielBB/xvfb-action@v1
         with:
           working-directory: ./ #optional
-          run: boozang "http://staging-be.boozang.com/extension?token=9b1cef55504467b6436ab2aaffe93f926009e593b0700759eb43fb8c&env=0#6009e593b0700759eb43fb8c/master/m22/t1/run"
+          run: boozang "http://staging-be.boozang.com/extension?token=9b1cef55504467b6436ab2aaffe93f926009e593b0700759eb43fb8c&env=0#6009e593b0700759eb43fb8c/master/m35/t1/run"
