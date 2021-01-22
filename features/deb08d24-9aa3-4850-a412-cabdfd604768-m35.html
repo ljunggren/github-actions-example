@@ -569,7 +569,7 @@ table.dataTable.dtr-inline.collapsed > tbody > tr.parent > td:first-child:before
                                 Passed
                             </p>
                         </td>
-                        <td class="percentage">0.00 %</td>
+                        <td class="percentage">100.00 %</td>
                     </tr>
                     <tr>
                         <td>
@@ -578,7 +578,7 @@ table.dataTable.dtr-inline.collapsed > tbody > tr.parent > td:first-child:before
                                 Failed
                             </p>
                         </td>
-                        <td class="percentage">100.00 %</td>
+                        <td class="percentage">0.00 %</td>
                     
                     
                     </tr>
@@ -705,14 +705,10 @@ table.dataTable.dtr-inline.collapsed > tbody > tr.parent > td:first-child:before
                     
 
                     
-                        <li>
-                            <span class="step failed-background" data-toggle="tooltip" title="Scenario failed">1</span>
-                        </li>
-                    
 
                     
                         <li>
-                            <span class="step passed-background" data-toggle="tooltip" title="Scenario passed">2</span>
+                            <span class="step passed-background" data-toggle="tooltip" title="Scenario passed">3</span>
                         </li>
                     
 
@@ -844,8 +840,8 @@ table.dataTable.dtr-inline.collapsed > tbody > tr.parent > td:first-child:before
 
                                 
                                     
-                                        <div class="label" data-toggle="tooltip" data-placement="top" title="Step failed">
-                                            <i class="fa fa-exclamation-circle fa-2x failed-color"></i>
+                                        <div class="label" title="Success">
+                                            <i class="fa fa-check-circle fa-2x passed-color" data-toggle="tooltip" data-placement="top" title="Step passed"></i>
                                         </div>
                                     
                                 
@@ -866,13 +862,9 @@ table.dataTable.dtr-inline.collapsed > tbody > tr.parent > td:first-child:before
                                     
 
                                     
-                                        <a href="#error02-error" data-toggle="collapse">+ Show Error</a>
-                                    
 
                                     
 
-                                    
-                                        <a href="#info02-html" data-toggle="collapse">+ Show Info</a>
                                     
 
                                     
@@ -883,49 +875,11 @@ table.dataTable.dtr-inline.collapsed > tbody > tr.parent > td:first-child:before
 
                         
                             
-                                <div id="error02-error" class="scenario-step-collapse collapse">
-                                    <pre class=info>The actual result does not match the expected result. (1===0)
-
-Failed on Action: m10.t13.1, Validate :  {{1===0}}</pre>
-                                </div>
-                            
 
                             
 
                             
 
-                            
-                                <div id="info02-html" class="scenario-step-collapse collapse">
-                                    <div class=info><b>Failed action:</b> <input onfocus="this.select()" style="width:calc(100% - 200px)" value="http://staging-be.boozang.com/extension?id=6009e593b0700759eb43fb8c&env=0#6009e593b0700759eb43fb8c/master/m10/t13/1/"/><br/><br/><b>Time:</b> 2021-01-22 00:56:44 <button style='margin-left:20px;color:#FFF;background-color:blue;border:1px solid;padding:5px;' onclick='this.style.color="#FFF";this.style.backgroundColor="blue";this.nextElementSibling.style.color="#000";this.nextElementSibling.style.backgroundColor="#FFF";document.getElementById("screenshot1611277004711").style.display="none";document.getElementById("log1611277004711").style.display="block"'>Log Details</button><br/><pre style='padding:10px;background-color:#CCC'><b>Stack trace:</b><br/><br/><div style='text-indent:0px'>[m35.t1.5] Fill form • Then the result should be shown</div><div style='text-indent:20px'>[m10.t13.0] Validate form filled • Validate :  {{1===0}}</div></pre><pre id='log1611277004711' style='background-color:#CCC;padding:10px;'><b>Log Details:</b><br/><br/>BZ-LOG: Start time: 2021-01-22 00:56:41
-BZ-LOG: Action[5, ]
-BZ-LOG: timeout in ms:0
-BZ-LOG: Action[6, Then the result should be shown]
-BZ-LOG: 00:56:43 Fill form / Then: Success
-BZ-LOG: 00:56:43 Fill form / Then the result should be shown: Success
-BZ-LOG: 00:56:43
-BZ-LOG: &gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;
-BZ-LOG:     &gt;&gt;&gt;&gt; Loaded item unit [m10,t13] - Validate form filled.  &gt;&gt;&gt;&gt;
-BZ-LOG: &gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;
-BZ-LOG: timeout in ms:0
-BZ-LOG: Action[1, Validate :  {{1===0}}]
-BZ-LOG: timeout in ms:0
-BZ-LOG: End time: 2021-01-22 00:56:44
-BZ-LOG: failed test: .m10/t13.0
-BZ-LOG: 00:56:44 Validate form filled / Loaded page: /: Success
-BZ-LOG: 00:56:44 Validate form filled / Validate :  {{1===0}}: Failed - The actual result does not match the expected result. (1===0)
-BZ-LOG: 00:56:44
-BZ-LOG:     &lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;
-BZ-LOG: &lt;&lt;&lt;&lt; End module - unit [m10.t13] Validate form filled - Failed on Action: &lt;&lt;&lt;&lt;
-BZ-LOG:     &lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;
-BZ-LOG: End time: 2021-01-22 00:56:44
-BZ-LOG: failed test: .m35/t1.0
-BZ-LOG: 00:56:44
-BZ-LOG:     &lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;
-BZ-LOG: &lt;&lt;&lt;&lt; End feature - scenario [m35.t1] Fill form - Failed on Action: &lt;&lt;&lt;&lt;
-BZ-LOG:     &lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;
-BZ-LOG: No more action, task complete!
-BZ-LOG:Stop task!</pre></div>
-                                </div>
                             
 
                             
@@ -984,8 +938,8 @@ BZ-LOG:Stop task!</pre></div>
                     ],
                     datasets: [{
                         data: [
-                            0,
                             1,
+                            0,
                             0,
                             0,
                             0,
