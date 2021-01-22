@@ -2,7 +2,7 @@
 
 ## Usage
 
-Use this as a template to trigger Boozang tests from GitHub actions.
+Testing. Use this as a template to trigger Boozang tests from GitHub actions.
 
 ## Authors
 
