@@ -15,7 +15,7 @@ jobs:
           run: boozang --file="json/report" "http://staging-be.boozang.com/extension?token=9b1cef55504467b6436ab2aaffe93f926009e593b0700759eb43fb8c&env=0#6009e593b0700759eb43fb8c/master/m35/t1/run"
           #run: pwd      
     
-      - run: ls -ltr json/
+      - run: ls -ltr
         if: always()
      
      
