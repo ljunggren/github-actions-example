@@ -14,7 +14,7 @@ jobs:
           working-directory: ./ #optional
           run: boozang --file="json/report" "http://staging-be.boozang.com/extension?id=6009e593b0700759eb43fb8c#6009e593b0700759eb43fb8c/master/m35/t1/actions"    
     
-      - run: npm install multiple-cucumber-html-reporter --save-dev && node reporter.js && ls -l && ls -l json && ls -l public && pwd
+      - run: npm install multiple-cucumber-html-reporter --save-dev && node reporter.js
         if: always()
   
       - name: Deploy report page
