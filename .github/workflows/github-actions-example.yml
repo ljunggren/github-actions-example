@@ -14,7 +14,9 @@ jobs:
           run: boozang "http://staging-be.boozang.com/extension?token=9b1cef55504467b6436ab2aaffe93f926009e593b0700759eb43fb8c&env=0#6009e593b0700759eb43fb8c/master/m35/t1/run"
       - run: npm install multiple-cucumber-html-reporter --save-dev && node reporter.js && ls -l && ls -l json && ls -l public && pwd
         if: always()
+  
       - name: Deploy report page
+        if: always()
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
