@@ -6,7 +6,7 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - uses: actions/setup-node@v1
-      - run: npm install -g boozang
+      - run: sudo npm install -g boozang
       - name: Run headless test with Boozang
         uses: GabrielBB/xvfb-action@v1
         with:
